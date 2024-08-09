@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Health Passport - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #0a1664;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+        }
+        input[type="file"] {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #171481;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #29138b;
+        }
+        .add-new-details {
+            text-align: center;
+        }
+        #addNewDetailsBtn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button a{
+            text-decoration: none;
+            color: white;
+        }
+        #addNewDetailsBtn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Digital Health Passport</h1>
+    </header>
+
+    <div class="container">
+        <h2>Welcome, Patient!</h2>
+        <p>Add New details:</p>
+        <form action="save_details.php" method="post">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="medical_history">Medical History:</label>
+            <textarea id="medical_history" name="medical_history"></textarea>
+
+            <label for="medical_history_file">Upload Medical History File:</label>
+            <input type="file" id="medical_history_file" name="medical_history_file">
+
+            <input type="submit" value="Save Details">
+        </form>
+
+        <div class="add-new-details">
+            <button id="addNewDetailsBtn"> <a href="#">+ Add New Details</a></button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("addNewDetailsBtn").onclick = function() {
+            // Your code to handle adding new details goes here
+            // alert("Add new details functionality is not implemented yet.");
+        }
+    </script>
+</body>
+</html>

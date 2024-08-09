@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Health Passport</title>
+        <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="DHP.css">
+    </head>
+    <body>
+        <style>
+            *{
+    margin: 0px;
+    padding: 0px;
+}
+/* .navbar1{
+    height: 80px;
+    background: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ } */
+
+ .navbar2{
+    height: 80px;
+    /* width: 450%px; */
+    /* background-color:#6488EA; */
+    background-color:  #264488;
+    color: white;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    
+    /* margin-right: 20px; */
+    /* align-items:center; */
+    /* margin-left: 20px; */
+}
+.nav-ops{
+   
+    /* margin-right: 20px; */
+    /* align-items:center; */
+    
+}
+.logo1{
+    margin-top: 7px;
+    background-image:url("logo.png") ;
+    background-size: cover;
+    height: 135px;
+    width: 135px; 
+    /* margin-right: 200px; */
+    /* position: static; */
+
+    /* font-size: 2rem; */
+    /* font-weight: bold; */
+    position: absolute;
+    /* top: 0px; */
+    /* right: 10px; */
+    left: 1px; 
+    z-index: 1;
+}
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 450px;
+    height: 35px;
+    border-radius: 4px;
+}
+.search_input{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+    /* background-color: none; */
+    background-color: #D66025;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: wheat;
+}
+.all-icon{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+#ID{
+    background-color: #D66025;
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 3.7px;
+    margin: 5PX;
+    padding: 10px;
+}
+
+#ID:hover{
+    background-color:#a84009;
+     /* background-color: red; */
+    /* color: yellow;  */
+    transition: all 1s ease-in-out; 
+    /* transform: translatex(200px); */
+    /* transform: skew(360deg); */
+}
+/* 
+option{
+    background-color: #a84009;
+}
+option:hover{
+    background-color:none;
+    
+}
+.navbar1 button:hover{
+    text-transform: none;
+    color: white;
+    font-weight: bold ;
+    font-size: 1rem;
+    text-decoration: none; */
+
+.language{
+    background-color: antiquewhite;
+    color: black;
+    text-decoration: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 3.7px;
+    margin: 5PX;
+    padding: 10px;
+}
+/* .navbar2{
+    height: 80px;
+ 
+    background-color:  #264488;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    
+} */
+/* .logo2{
+    margin-top: 20px;
+    background-image:url("logo.png") ;
+    background-size: cover;
+    height: 110px;
+    width: 110px;} */
+
+.navbar2 a{
+  text-transform: none;
+  color: white;
+  font-weight: bold ;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.border:hover{
+    border: 2px solid white;
+} 
+.container1{
+    height: 400px;
+    background-color: white;
+}
+.hero-section1{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* align-items: flex-end; */
+    /* margin-left: 4px; */
+}
+.img{
+    background-image: url("hero-sec.jpg");
+    background-size: cover;
+    height: 320px;
+    width: 750px;
+}
+.data{
+    height: 350px;
+    width: 720px;
+    /* background-color: aqua; */
+    margin-left: 25px;
+
+}
+ p a{
+    text-decoration: none;
+    font-weight: bold; 
+ }
+.hero-section2{
+    height: 450px;
+    background-color: #264488;
+   
+     }
+.hero-msg{
+    display: flex;
+     justify-content: space-evenly;
+    /* flex-direction: column; */
+      align-items: center;  
+}
+
+.contentbox1{
+    
+    height: 230px;
+    width: 250px;
+    /* border: 2px solid black; */
+    display: inline-block;
+    /* display: flex; */
+    justify-content: space-evenly;
+    border-radius: 10px;
+     margin-left: 100px; 
+     color: #264488;
+     align-items: center;
+     font-size: 1.5rem;
+     font-weight: bold;
+     /* padding: 15px; */
+     padding-left: 10px;
+
+}
+.img1{
+    background-image: url("identity.jpg");
+    background-size: cover;
+    height: 67px;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   margin-left: 90px;
+   margin-top: 25px;
+}
+.contentbox2{
+    height: 230px;
+    width: 250px;
+    /* border: 2px solid black; */
+    display: inline-block;
+    /* display: flex; */
+    justify-content: space-evenly;
+    border-radius: 10px;
+     margin-left: 100px; 
+    color: #264488;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* padding: 15px; */
+    padding-left: 10px;
+
+
+
+}
+.security{
+     
+    margin-left: 90px; 
+    margin-top: 25px;
+    font-size: 5rem;
+}
+.contentbox3{
+    height: 230px;
+    width: 250px;
+    /* border: 2px solid black; */
+    display: inline-block;
+    /* display: flex; */
+    justify-content: space-evenly;
+border-radius: 10px;
+     margin-left: 100px; 
+     color: #264488;
+     align-items: center;
+     font-size: 1.5rem;
+     font-weight: bold;
+     /* padding: 15px; */
+     padding-left: 10px;
+    
+
+}
+.img3{
+    background-image: url("data.jpg");
+    background-size: cover;
+    height: 67px;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   margin-left: 90px;
+   margin-top: 25px;
+}
+.contentbox4{
+    height: 230px;
+    width: 250px;
+    /* border: 2px solid black; */
+    display: inline-block;
+     /* display: flex;  */
+    justify-content: space-evenly;
+border-radius: 10px;
+     margin-left: 100px; 
+     color: #264488;
+     align-items: center;
+     font-size: 1.5rem;
+     font-weight: bold;
+     padding-left: 10px;
+     /* padding: 15px; */
+
+    
+}
+.img4{
+    background-image: url("PHR.jpg");
+    background-size: cover;
+    height:80px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   margin-left: 70px;
+   margin-top: 25px;
+}
+.hero-section3{
+    height: 450px;
+  
+    background-color: white;
+    
+    border: 2px solid black;  
+
+}
+
+.hero-data a{
+    text-decoration: none;
+    border: none;
+    color: #264488;
+}
+.data1{
+    margin-left: 100px;
+    padding-top: 50px;
+    color: #264488;
+    font-weight: bolder;
+}
+.data2{
+    margin-left: 100px;
+    padding-top: 30px;
+    color: #264488;
+    font-weight: bolder;
+}
+button{
+    background-color: #D66025;
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 3.7px;
+    /* margin: 80PX; */
+    padding: 15px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover{
+    background-color:#a84009;
+     /* background-color: red; */
+    /* color: yellow;  */
+    transition: all 1s ease-in-out; 
+    /* transform: translatex(200px); */
+    /* transform: skew(360deg); */
+}
+
+.box1{
+    height :400px;
+    width: 700px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    margin-left: 750px;
+    border-radius: 10px;
+    color: #264488;
+    font-weight: 800;
+    
+    
+    }
+    /* .box1-data1{
+        align-self: center;
+       
+        color: #264488;
+    } */
+    .box1 a{
+        color: #264488;
+        margin-left: 20px;
+    }
+
+    
+.foot-section{
+    /* height: 450px;
+    background-color: #264488; */
+    /* margin-top: 15px; */
+}
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    font-size: 0.85rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+}
+.foot-panel1 a{
+    color: #dddddd;
+    text-decoration: none;
+}
+.foot-panel1 a:hover{
+    text-decoration: underline ;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* position: static; */
+}
+
+.foot-panel2{
+    background-color:#264488;
+    color: white;
+    height: 400px;
+    /* display: inline-block; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    /* margin-top: 15px; */
+     
+}
+.foot-panel2 a{
+     /* text-decoration: none;  */
+}
+ul{
+    margin-top: 10px;
+}
+ul a{
+    display: block;
+    align-items: normal;
+     margin-top: 10px; 
+    color: #dddddd;
+    font-size: 0.85rem;
+    /* align-content: center; */
+}
+
+
+    /* FAQ's Section */
+         
+        </style>
+     <header>
+        <!-- <div></div> -->
+            <!-- <div class="navbar1">
+                <div class="logo1"></div>
+
+                <div class="nav-search">
+                    <select class="search-select">
+              <option>All</option>
+            </select> 
+                    <input placeholder="Search " class="search_input">
+                    <div class="search-icon"> 
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <select class="language ">
+        
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Tamil</option>
+                    <option>Telagu</option>
+                    <option>Marathi</option>
+                </select> 
+ 
+                <select id="ID" name="ID">
+                   
+                    <button><option value=" Create ID Number">Create DHPA
+                            Number</option></button>
+                    <button> <option value="Create Doctor ID Number  ">Create
+                            Doctor DHPA Number </option></button>
+                    <button><option value="Create Patient ID number">Create
+                            Patient DHPA number</option></button>
+                    
+                </select> 
+
+            </div> -->
+            <div class="navbar2">
+                 <!-- <div class="logo2"></div>  -->
+                <div class="logo1"></div>
+                <!-- <div class="all-icon ">
+                    <i class="fa-solid fa-bars"></i>All
+                </div> -->
+                
+                    <div class="all-icon ">
+                        <i class="fa-solid fa-bars"></i>All
+                    </div>
+                <a class="border" href="DHP.html">Home</a>
+                <!-- <a class="border" href="#">Login</a>
+                <a class="border" href="#">Register</a> -->
+                <a class="border" href="AboutSection.html">About</a>
+                <a class="border" href="servicespage.html">service</a>
+                <!-- <a class="border" href="#">News</a> -->
+                <a href="FAQ's.html" class="border">FAQ's</a>
+                <a class="border" href="HelpManagement.html">Help</a>
+            
+                <!-- <a class="border" href="#">Learn more</a>
+                <a class="border" href="#">Home</a>
+                <a class="border" href="#">Login</a>
+                <a class="border" href="#">Register</a> -->
+
+                <!-- <div class="navbar1"> -->
+                    <!-- <div class="logo1"></div> -->
+    
+                    <!-- <div class="nav-search">
+                      
+                        <input placeholder="Search " class="search_input">
+                        <div class="search-icon"> 
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div> -->
+    
+
+            </div>
+        </header>
+
+ 
+
+        <div class="hero-section1">
+             
+            <div class="data">
+                
+                <h1 style="color: #264488; font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Create Digital Health Passport Account - DHPA Number</h1>
+                <br>
+                <h2 style="color: #264488; font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"> Creating India's Digital Health Mission</h2>
+           <!-- <p>ABHA - Ayushman Bharat Health Account - Key to your digital healthcare journey.</p> -->
+           <br>
+           <h5 style="color: #264488; font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">DHPA - Digital Health Passport Account - Key to your digital healthcare journey.</h5>
+           <br>
+           <!-- <select id="ID" name="ID"> -->
+            
+             
+            <button> <a href="registration_page.html">Create DHPA Number</a></button>
+            <!-- <button> <option value="Create Patient ID Number  " > <a href="patient details.html"> Create Patient DHPA Number</a>
+                     </option></button>
+            <button><option value="Create Doctor ID number"> <a href="">Create Doctor DHPA Number</a>
+                   </option></button> -->
+            <!-- <option value="Houston">Houston</option>
+<option value="Phoenix">Phoenix</option>
+<option value="Philadelphia">Philadelphia</option> -->
+            <!-- Add more cities as needed -->
+        <!-- </select>  -->
+        <br><br>
+        <p>Already Have DHPA Number? <a href="loginpage1.html" style="color: #D66025; font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Login</a></p> 
+        </div>
+            <div class="img"></div>
+        </div>
+        <div class="hero-section2">
+            <div class="hero-msg"> 
+            <h1 style="color: white; font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Benefits of DHPA Number</h1>
+        
+            <!-- <p  style="color: white; font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">DHPA number is a 14 digit number that will uniquely identify you as a participant in India's digital healthcare system. DHPA number will establish a strong and trustable identity for you that will be accepted by healthcare providers across the country. Seamless sign up for Personal Health Records application for Health data sharing</p> -->
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="content">
+            <div   class="contentbox1" style="background-color:white">
+                <div  class="img1"></div>
+                <br>
+                
+                Unique & Trustable Identity
+               </div>
+            
+            <div   class="contentbox2"  style="background-color: white">
+                <div class="img2">
+                    <div class="security">
+                        <!-- <i class="fa-duotone fa-lock"></i> -->
+                        <!-- <i class="fa-regular fa-lock"></i -->
+                        <!-- <i class="fa-solid fa-camera-security"></i> -->
+                        <!-- <i class="fa-regular fa-camera-security"></i> -->
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                </div>
+<br>
+
+                     Data Security</div>
+            
+            <div  class="contentbox3"  style="background-color: white">
+                <div class="img3"></div>
+                <br>
+                
+                Health Information Accessebility</div>
+
+            <div   class="contentbox4"  style="background-color: white">
+                <div class="img4"></div>
+                
+                <br>
+                Easy Personal Health Record Sign Up</div>
+        </div>
+        </div>
+        <!-- <div class="hero-section3"> -->
+            <!-- <div class="hero-data">
+                <p class="data1 ">Support</p>
+                <br><br>
+                <h1 style=" font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"class="data2"><a href="DigitalHealthPassport.html">FAQ's</a></h1>
+           <br><br>
+           <button>Contact Us</button>
+            </div> -->
+            <!-- <div class="box1">
+                <br>
+                <br><br><br>
+                <p class="box1-data1"  style=" font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><a href="#">1] What is Digital Health Passport?</a></p>
+                <br>
+                <br>
+                <br><hr><br><br><br>
+                <p class="box1-data2"  style=" font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">  <a href="#">2] What is DHPA Number?</a></p>
+                <br>
+                <br>
+                <br><hr><br><br><br>
+                <p class="box1-data3"  style=" font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">  <a href="#">3] How to Create DHPA Number? </a></p>
+                
+                
+            </div> -->
+        
+     </div>
+        <footer>
+<div class="foot-section">
+    <div class="foot-panel1">
+        <a href="#"><b>back to top</b></a>
+         </div>
+         <div class="foot-panel2">
+             <ul>
+            <h3> Get to Know Us</h3>
+            <a href="AboutSection.html">About Us</a>
+            <a href="#">contact us</a>
+            <a href="servicespage.html">service</a>
+            <!-- <a href="#"></a> -->
+         </ul>
+        <ul>
+             <h3> Connect with Us</h3>
+             <a href="#"> Facebook</a>
+             <a href="#"> Twitter</a>
+             <a href="#"> Instagram</a>
+             <a href="#"> Youtube</a>
+        </ul>
+     
+     <ul>
+         <h3> Let Us Help You</h3>
+         <!-- <a href="#">  </a> -->
+         <a href="#">  Your Account</a>
+         <a href="DP&DS.html">  data privacy</a>
+         <a href="DP&DS.html">  data security  </a>
+         <!-- <a href="#">  </a> -->
+         <a href="HelpManagement.html"> Help</a>
+     </ul>
+     <ul>
+        <h3> policies</h3>
+        <a href="T&C.html"> Terms and Conditions</a>
+        <a href="#"> Website Policies</a>
+        <a href="DP&DS.html"> Data Privacy Policy</a>
+        <a href="#"> Health Data Management Policy</a>
+   </ul>
+     </div>
+    <div class="foot-msg">
+        
+    </div>
+</div>
+        </footer>
+    </body>
+</html>
